@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h2 class="titulo">Cadastro de Curso</h2>
+
+  <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let curso of cursos">
+            <td>{{ curso.id }}</td>
+            <td>{{ curso.name }}</td>
+            <td>{{ curso.descricao}}</td>
+        </tr>
+    </tbody>  
+  </table>
+
+</body>
+</html>
